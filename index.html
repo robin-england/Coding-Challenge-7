@@ -4,6 +4,25 @@
     <title>Coding Challenge #7</title>
 </head>
 <body>
-    
+    <p><u>Please complete the following feedback form:</u></p>
+    <form action="">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName"><br><br>
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating">
+            <option disabled selected value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <label for="comments"></label><br>
+        <textarea name="comments" id="comments" cols="65" rows="7" placeholder="(Optional) Please share any feedback about your last visit."></textarea><br>
+        <input type="submit" value="Submit">
+    </form><br><br>
+    <div id="feedbackForm"></div>
 </body>
 </html>
