@@ -5,13 +5,13 @@
 </head>
 <body>
     <p><u>Please complete the following feedback form:</u></p>
-    <form action="">
+    <form id="feedbackForm">
         <label for="firstName">First Name:</label>
-        <input type="text" name="firstName" id="firstName">
+        <input type="text" name="firstName" id="firstName" required>
         <label for="lastName">Last Name:</label>
-        <input type="text" name="lastName" id="lastName"><br><br>
+        <input type="text" name="lastName" id="lastName" required><br><br>
         <label for="rating">Rating:</label>
-        <select name="rating" id="rating">
+        <select name="rating" id="rating" required>
             <option disabled selected value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -20,9 +20,10 @@
             <option value="5">5</option>
         </select><br>
         <label for="comments"></label><br>
-        <textarea name="comments" id="comments" cols="65" rows="7" placeholder="(Optional) Please share any feedback about your last visit."></textarea><br>
+        <textarea name="comments" id="comments" cols="65" rows="7" placeholder="Please share any feedback about your last visit." required></textarea><br>
         <input type="submit" value="Submit">
     </form><br><br>
-    <div id="feedbackForm"></div>
+    <div id="feedbackSubmission"></div>
+    <script src="script.js"></script>
 </body>
 </html>
